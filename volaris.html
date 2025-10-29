@@ -14,106 +14,229 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Espanol</a></li>
+                    <li class="dropdown">
+                        <a href="#">Espanol</a>
+                        <ul class="dropdown-content">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Francais</a></li>
+                        <li><a href="#">Portugues</a></li>
+                    </ul>
+                    </li>
                     <li><a href="#" class="btn-regitrar">Registrarse</a></li>
                     <li><a href="#" class="btn-login">Iniciar Sesion</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="nav-wrapper">
-            <nav class="secundary-nav">
-                <ul>
-                    <li><a href="#">Vuelos</a></li>
-                    <li><a href="#">Vuelo+Hotel</a></li>
-                    <li><a href="#">Mi reserva</a></li>
-                    <li><a href="#">Estatus de vuelo</a></li>
-                </ul>
-            </nav>
+        <main>
+            <div class="nav-wrapper">
+                <nav class="secundary-nav">
+                    <ul>
+                        <li><a href="#">Vuelos</a></li>
+                        <li><a href="#">Vuelo+Hotel</a></li>
+                        <li><a href="#">Mi reserva</a></li>
+                        <li><a href="#">Estatus de vuelo</a></li>
+                    </ul>
+                </nav>
 
-            <nav class="third-nav">
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Guia de viaje</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">FlexTicket</a></li>
-                            <li><a href="#">Cambio de vuelo</a></li>
-                            <li><a href="#">Politica de equipaje</a></li>
-                            <li><a href="#">Servicios adicionale</a></li>
-                            <li><a href="#">Descarga el Menu Entre Nubes</a></li>
-                            <li><a href="#">Revista V de Volaris</a></li>
-                            <li><a href="#">Formas de pago</a></li>
-                            <li><a href="#">Docuemntos de viaje por pais</a></li>
-                            <li><a href="#">Como hacer check-in</a></li>
-                            <li><a href="#">TSA PreCheck</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li><a href="#">Altitud</a></li>
-                    <li><a href="#">Nuestros Destinos</a></li>
-                    <li><a href="#">Promociones</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+                <nav class="third-nav">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#">Guia de viaje</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">FlexTicket</a></li>
+                                <li><a href="#">Cambio de vuelo</a></li>
+                                <li><a href="#">Politica de equipaje</a></li>
+                                <li><a href="#">Servicios adicionale</a></li>
+                                <li><a href="#">Descarga el Menu Entre Nubes</a></li>
+                                <li><a href="#">Revista V de Volaris</a></li>
+                                <li><a href="#">Formas de pago</a></li>
+                                <li><a href="#">Docuemntos de viaje por pais</a></li>
+                                <li><a href="#">Como hacer check-in</a></li>
+                                <li><a href="#">TSA PreCheck</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">Altitud</a></li>
+                        <li><a href="#">Nuestros Destinos</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-wrapper">
+                <div class="main-container">
+                    <div class="form-container">
+                        <div class="trip-type">
+                            <button class="tap-active">Viaje Redondo</button>
+                            <button>Viaje Sencillo</button>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group origin">
+                                <label for="origin-input">Origen</label>
+                                <input type="text" id="origin-input" value="Cd. Mexico (Tod...)" readonly>
+                                <span class="swap-icon"></span>
+                            </div>
+                            <div class="input-group destination">
+                                <label for="destination-input">Selecciona un destino</label>
+                                <input type="text" id="destination-input" value="---" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="input-group date-picker">
+                            <label for="departure-date">Salida</label>
+                            <input type="text" id="departure-date" value="Vie, 31 oct, 2025" readonly>
+                            <span class="calendar-icon"></span>
+                        </div>
+                        <div class="input-group date-picker">
+                            <label for="return-date">Regreso</label>
+                            <input type="text" id="return-date" value="Sab, 01 nov, 2025" readonly>
+                            <span class="calendar-icon"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group passengers">
+                            <label for="passengers">Pasajeros</label>
+                            <input type="text" id="passengers" value="1 Adulto" readonly>
+                        </div>
+                        <div class="input-group promo-code">
+                            <label for="promo-code">Tienes un codigo de promocion? (Opcional)</label>
+                            <input type="text" id="promo-code">
+                        </div>
+                    </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-vuelo-hotel">Vuelo + Hotel 🏨</button>
+                            <button class="btn btn-search-flights">Buscar vuelos ✈️</button>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="image-carousel">
+                            <div class="carousel-item">
+                                <img src="images/cancun-destino.jpg" alt="Cancun">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tijuana-destino.jpg" alt="Tijuana">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <h2>Mejores vuelos con Volaris</h2>
+        <div class="laction-selector">
+            <span>De: Cd. Mexico (AICM)</span>
+            <span>Presupuesto</span>
+            <span>Reiniciar</span>
+            <span>Ordenar por: Popularidad</span>
         </div>
-        <div class="content-wrapper">
-            <div class="container">
-                <div class="trip-type">
-                    <button class="tap-active">Viaje Redondo</button>
-                    <button>Viaje Sencillo</button>
+        <div class="flights-container">
+            <div class="flight-card">
+                <img src="mexico-merida.jpg" alt="Ciudad de México a Mérida">
+                <div class="flight-info">
+                    <h3>Ciudad de México (MEX) a Mérida (MID)</h3>
+                    <p>20/01/2026</p>
+                    <p class="price">573 MXN*</p>
+                    <button class="reserve-btn">Reserva ahora</button>
+                </div>
+            </div>
+
+            <div class="flight-card">
+                <img src="mexico-losangeles.jpg" alt="Ciudad de México a Los Ángeles">
+                <div class="flight-info">
+                    <h3>Ciudad de México (MEX) a Los Ángeles (LAX)</h3>
+                    <p>11/12/2025</p>
+                    <p class="price">1,629 MXN*</p>
+                    <button class="reserve-btn">Reserva ahora</button>
+                </div>
+            </div>
+
+            <div class="flight-card">
+                <img src="mexico-los-cabos.jpg" alt="Ciudad de México a Los Cabos">
+                <div class="flight-info">
+                    <h3>Ciudad de México (MEX) a Los Cabos (SJD)</h3>
+                    <p>02/12/2025</p>
+                    <p class="price">1,086 MXN*</p>
+                    <button class="reserve-btn">Reserva ahora</button>
+                </div>
+            </div>
+
+            <div class="flight-card">
+                <img src="mexico-tuxtla.jpg" alt="Ciudad de México a Tuxtla Gutiérrez">
+                <div class="flight-info">
+                    <h3>Ciudad de México (MEX) a Tuxtla Gutiérrez (TGZ)</h3>
+                    <p>21/01/2026</p>
+                    <p class="price">411 MXN*</p>
+                    <button class="reserve-btn">Reserva ahora</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <h6>Busca en nuestra pagina el precio que a ti te convenga.*</h6>
+            <h2>Pago Seguro</h2>
+
+            <div class="payment-methods-box"> 
+                
+                <div class="card-payment">
+                    <p>Tarjeta de Credito, tarjeta de dibito y pago electronico</p>
+                    <div class="cards">
+                        <img src="images/visa-logo.png" alt="Visa">
+                        <img src="images/mastercard-logo.png" alt="MasterCard">
+                        <img src="images/amex-logo.png" alt="American Express">
+                        <img src="images/paypal-logo.png" alt="PayPal">
+                        <img src="images/invex-logo.png" alt="Invex"> </div>
+                    <a href="#">Ver más información</a>
                 </div>
 
-                <div class="form-row">
-                    <div class="input-group origin">
-                        <label for="origin-input">Origen<label>
-                        <input type="text" id="origin-input" value="Cd. Mexico (Tod...)" readonly>
-                        <span class="swap-icon"></span>
-                    </div>
-                    <div class="input-group destination">
-                        <label for="destination-input">Selecciona un destino</label>
-                        <input type="text" id="destination-input" value="---" readonly>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="input-group date-picker">
-                        <label for="departure-date">Salida</label>
-                        <input type="text" id="departure-date" value="Vie, 31 oct, 2025" readonly>
-                        <span class="calendar-icon"></span>
-                    </div>
-                    <div class="input-group date-picker">
-                        <label for="return-date">Regreso</label>
-                        <input type="text" id="return-date" value="Sab, 01 nov, 2025" readonly>
-                        <span class="calendar-icon"></span>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="input-group passengers">
-                        <label for="passengers">Pasajeros</label>
-                        <input type="text" id="passengers" value="1 Adulto" readonly>
-                    </div>
-                    <div class="input-group promo-code">
-                        <label for="promo-code">Tienes un codigo de promocion? (Opcional)</label>
-                        <input type="text" id="promo-code">
-                    </div>
-                </div>
-                <div class="action-buttons">
-                    <button class="btn btn-vuelo-hotel">Vuelo + Hotel 🏨</button>
-                    <button class="btn btn-search-flights">Buscar vuelos ✈️</button>
-                </div>
-                <div class="carousel-container">
-                    <div class="image-carousel">
-                        <div class="carousel-item">
-                            <img src="images/cancun-destino.jpg" alt="Cancun">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/tijuana-destino.jpg" alt="Tijuana">
-                        </div>
-                    </div>
+                <div class="installment-payment">
+                    <p>Efectivo en cualquiera de las sucursales participantes</p>
+                    <div class="stores">
+                        <img src="images/oxxo-logo.png" alt="OXXO">
+                        <img src="images/7eleven-logo.png" alt="7-Eleven">
+                        <img src="images/walmart-logo.png" alt="Walmart">
+                        <img src="images/farmacia-ahorro-logo.png" alt="Farmacia del Ahorro"> </div>
                 </div>
 
             </div>
+        </div>
+
+        <div class="benefits-section">
+            <h2>Beneficios de Volaris</h2>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <img src="altitude-logo.png" alt="altitude">
+                    <h3>altitude</h3>
+                    <p>Ahora puedes acumular puntos por tus compras en línea y canjearlos en tus vuelos.</p>
+                    <button class="inscribe-btn">Inscribirme ahora</button>
+                </div>
+                <div class="benefit-card">
+                    <img src="pase-anual-logo.png" alt="Pase Anual">
+                    <h3>Pase Anual</h3>
+                    <p>Vuela todo el año que quieras por un solo precio.</p>
+                    <button class="inscribe-btn">Inscribirme ahora</button>
+                </div>
+                <div class="benefit-card">
+                    <img src="vpass-logo.png" alt="v.pass">
+                    <h3>v.pass</h3>
+                    <p>Un viaje no espera, obtén la flexibilidad que necesitas.</p>
+                    <button class="inscribe-btn">Inscribirme ahora</button>
+                </div>
+                <div class="benefit-card">
+                    <img src="invex-logo.png" alt="INVEX">
+                    <h3>INVEX</h3>
+                    <p>Acumula puntos para comprar tus vuelos.</p>
+                    <button class="inscribe-btn">Solicita tu tarjeta</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="promotions-section">
+            <h2>Promociones</h2>
+            <p>Sé el primero en enterarte de nuestras promociones</p>
+            <input type="email" placeholder="Correo Electrónico">
+            <button class="subscribe-btn">¡Suscríbete!</button>
         </div>
 
     </body>

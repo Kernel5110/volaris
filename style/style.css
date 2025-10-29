@@ -319,7 +319,7 @@ a {
 }
 
 .carousel-item {
-    height: 150px;
+    height: 250px;
     flex: 0 0 100%;
     flex-shrink: 0;
     position: relative;
@@ -330,7 +330,7 @@ a {
 
 .carousel-item img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -346,7 +346,6 @@ a {
     0% { transform: translateX(0%); }
     33% { transform: translateX(-100%); }
     66% { transform: translateX(-200%); } 
-    100% { transform: translateX(-200%); }
 }
 
 .btn {
@@ -371,4 +370,223 @@ a {
     background-color: var(--color-volaris-purple);
     color: white;
     flex: 2;
+}
+
+.flights-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.flight-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.flight-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.flight-info {
+    margin-top: 10px;
+}
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #E5007D;
+}
+.reserve-btn {
+    background-color: #E5007D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.flight-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.flight-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flight-info h3 {
+    font-size: 1em;
+    margin: 10px 0;
+    color: var(--text-dark);
+}
+
+.flight-info p {
+    font-size: 0.85em;
+    color: var(--text-light);
+    margin: 5px 0;
+}
+
+.payment-methods-box {
+    display: flex; 
+    gap: 30px; 
+    padding: 20px 30px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.card-payment, 
+.installment-payment {
+    flex: 1; 
+}
+
+.card-payment {
+    border-right: 1px solid var(--color-border-light);
+    padding-right: 30px; 
+}
+
+.installment-payment {
+    padding-left: 30px; 
+}
+
+.card-payment p, 
+.installment-payment p {
+    font-size: 1em;
+    color: var(--color-text-dark);
+    margin: 0 0 15px 0; 
+}
+
+.cards, .stores {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.cards img, .stores img {
+    height: 35px; 
+    object-fit: contain; 
+}
+
+.card-payment a {
+    color: var(--color-link-purple);
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.benefits-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.benefits-section h2 {
+    display: none; 
+}
+
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefit-card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.benefit-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-volaris-purple);
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.benefit-card h3 {
+    font-size: 1.2em;
+    color: var(--color-text-dark);
+    margin: 0 0 10px 0;
+}
+
+.benefit-card p {
+    font-size: 0.9em;
+    color: var(--color-text-light);
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.inscribe-btn {
+    background-color: var(--color-volaris-purple);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 200px; 
+}
+
+.inscribe-btn:hover {
+    background-color: var(--color-volaris-accent);
+}
+
+
+.promotions-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: var(--color-background-gray);
+    border-top: 1px solid var(--color-border-light);
+    text-align: center;
+}
+
+.promotions-section h2 {
+    margin-top: 0;
+}
+
+.promotions-section p {
+    margin-bottom: 20px;
+}
+
+.promotions-section input[type="email"] {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.subscribe-btn {
+    background-color: var(--color-volaris-purple);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
