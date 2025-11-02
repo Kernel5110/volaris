@@ -9,15 +9,16 @@
     <body>
         
         <header class="header">
-            <div class="logo">
-                <img src="images/volaris-logo.png" alt="Volaris Logo">
-                <h1>VOLARIS</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Espanol</a>
-                        <ul class="dropdown-content">
+            <div class="top-header">
+                <div class="logo">
+                    <img src="images/volaris-logo.png" alt="Volaris Logo">
+                    <h1>VOLARIS</h1>
+                </div>
+                <nav>
+                    <ul id="main-nav-ul">
+                        <li class="dropdown">
+                            <a href="#">Espanol</a>
+                            <ul class="dropdown-content">
                         <li><a href="#">English</a></li>
                         <li><a href="#">Francais</a></li>
                         <li><a href="#">Portugues</a></li>
@@ -27,9 +28,13 @@
                     <li><a href="#" class="btn-login">Iniciar Sesion</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <div class="nav-wrapper">
+            <button class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </div>
+            <div class="nav-wrapper" id="nav-wrapper">
                 <nav class="secundary-nav">
                     <ul>
                         <li><a href="#">Vuelos</a></li>
@@ -67,6 +72,8 @@
                     </ul>
                 </nav>
             </div>
+        </header>
+        <main>
             <div class="content-wrapper">
                 <div class="main-container">
                     <div class="form-container">
@@ -237,7 +244,7 @@
         <div class="benefits-section">
             <div class="benefits-container">
                 <div class="benefit-card">
-                    <img src="altitude-logo.png" alt="altitude">
+                    <img src="vuelos-hotel.png" alt="vuelos + hotel">
                     <h3>Vuelos + Hotel</h3>
                     <p>Encuentra las mejores ofertas para tu viaje.</p>
                 </div>
@@ -266,6 +273,96 @@
             <input type="email" placeholder="Correo Electrónico">
             <button class="subscribe-btn">¡Suscríbete!</button>
         </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Nuestras rutas</h3>
+                    <ul>
+                        <li><a href="#">Vuelos a Aguascalientes</a></li>
+                        <li><a href="#">Vuelos a Cancún</a></li>
+                        <li><a href="#">Vuelos a Guatemala</a></li>
+                        <li><a href="#">Vuelos a Culiacan</a></li>
+                        <li><a href="#">Vuelos a Guadalajara</a></li>
+                        <li><a href="#">Vuelos a Leon</a></li>
+                        <li><a href="#">Vuelos a Ciudad de México</a></li>
+                        <li><a href="#">Vuelos a Morelia</a></li>
+                        <li><a href="#">Vuelos a Tijuana</a></li>
+                        <li><a href="#">Vuelos a Uruapan</a></li>
+                        <li><a href="#">Vuelos a Costa Rica</a></li>
+                        <li><a href="#">Vuelos a Los Ángeles</a></li>
+                        <li><a href="#">Vuelos a Chicago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Información para tu viaje y derechos de los pasajeros</h3>
+                    <ul>
+                        <li><a href="#">FlexiTicket</a></li>
+                        <li><a href="#">Tarjetas Volaris INVEX</a></li>
+                        <li><a href="#">Derechos que tienes al viajar con Volaris</a></li>
+                        <li><a href="#">Equipaje</a></li>
+                        <li><a href="#">Pase de abordar</a></li>
+                        <li><a href="#">Cambio de vuelo</a></li>
+                        <li><a href="#">altitude</a></li>
+                        <li><a href="#">v.club</a></li>
+                        <li><a href="#">v.business</a></li>
+                        <li><a href="#">Suscripciones Volaris</a></li>
+                        <li><a href="#">Documentos de viaje por pais</a></li>
+                        <li><a href="#">Conoce yavas.com</a></li>
+                        <li><a href="#">Viajes con bebés</a></li>
+                        <li><a href="#">Pagos diferidos</a></li>
+                        <li><a href="#">Voucher electrónico</a></li>
+                        <li><a href="#">Tarifas de Servicios Adicionales</a></li>
+                        <li><a href="#">Cancelar tu reservación</a></li>
+                        <li><a href="#">TUA</a></li>
+                        <li><a href="#">Aeropuerto de Bogotá</a></li>
+                        <li><a href="#">Avisos para vuelos a Colombia</a></li>
+                        <li><a href="#">Facturación electrónica</a></li>
+                        <li><a href="#">Pase anual</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Sobre Volaris</h3>
+                    <p>Somos la aerolinea de ultra-bajo costo con vuelos en México, Estados Unidos, Centroamérica y Sudamérica.</p>
+                    <ul>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Relación con inversionistas</a></li>
+                        <li><a href="#">Sostenibilidad corporativa</a></li>
+                        <li><a href="#">Sala de prensa</a></li>
+                        <li><a href="#">Blog Volaris</a></li>
+                        <li><a href="#">Revista V de Volaris</a></li>
+                        <li><a href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Descarga nuestra aplicación</h3>
+                    <div class="app-links">
+                        <a href="#"><img src="images/google-play-logo.png" alt="Google Play"></a>
+                        <a href="#"><img src="images/app-store-logo.png" alt="App Store"></a>
+                    </div>
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                        <a href="#"><img src="images/tiktok-logo.png" alt="TikTok"></a>
+                        <a href="#"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/whatsapp-logo.png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const navWrapper = document.getElementById('nav-wrapper');
+            const mainNavUl = document.getElementById('main-nav-ul');
+
+            hamburgerMenu.addEventListener('click', () => {
+                navWrapper.classList.toggle('active');
+                mainNavUl.classList.toggle('active');
+            });
+        </script>
 
     </body>
 </html>
